@@ -20,18 +20,18 @@ resource "yandex_mdb_redis_cluster" "foo" {
   host {
     zone       = "ru-central1-a"
     subnet_id  = var.default_subnet_id_zone_a
-    shard_name = "first"
+    shard_name = "first" //The name of the shard to which the host belongs
   }
 
   host {
     zone       = "ru-central1-b"
     subnet_id  = var.default_subnet_id_zone_b
-    shard_name = "second"
+    shard_name = "second" //The name of the shard to which the host belongs
   }
 
   host {
     zone       = "ru-central1-c"
     subnet_id  = var.default_subnet_id_zone_c
-    shard_name = "third"
+    shard_name = "third" //The name of the shard to which the host belongs
   }
 }
