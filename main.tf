@@ -1,4 +1,5 @@
 #Create sharded redis cluster in 3 zones
+#Link to terraform documentation - https://registry.tfpla.net/providers/yandex-cloud/yandex/latest/docs/resources/mdb_redis_cluster
 
 resource "yandex_mdb_redis_cluster" "foo" {
   name        = "test"
